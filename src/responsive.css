@@ -1,0 +1,72 @@
+/* Add this to prevent horizontal overflow */
+@media (max-width:507px) {
+ body{
+    width: 100%;
+ }   
+ .pitchline{
+    font-size: 30px;
+    /* background: white; */
+    max-width: 100vw;
+    padding: 0;
+    margin: 0;
+    top: 200px;
+ }
+ .links{
+    top: 350px;
+    scale: 0.6;
+ }
+ .scroll-indicator{
+    top: 500px;
+ }
+ .hero{
+    top: -100px;
+ }
+ .main{
+    height: fit;
+    /* background: white; */
+ }
+ .hero-buttons{
+gap: 0px;
+ }
+ .hero-buttons a{
+scale: 0.7;
+gap: 0px;
+/* width: 100px; */
+ }
+ .hero-image{
+    display: none;
+ }
+ .heros{
+    padding: 0px 10px;
+ }
+ .hero-texts h1{
+    font-size: 30px;
+    padding: 10px 25px;
+ }
+ .hero-imgs{
+    display: none;
+ }
+ .about{
+    top: -200px;
+ }
+ .exp-txt{
+    position: relative;
+    left: 0;
+    top: 0px;
+ }
+.exp-sec-ss{
+    top: -210px;
+}
+.experience-timeline{
+    flex-wrap: wrap;
+    /* background: white; */
+    padding: 0;
+    margin: 0;
+    gap: 50px;
+}
+
+.timeline-item{
+    width: 100%;
+    
+}
+}

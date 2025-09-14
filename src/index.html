@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdul Hannan | Web Developer</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.11.4/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.11.4/dist/ScrollTrigger.min.js"></script>
+    <link rel="shortcut icon" href="/img/Capture.PNG" type="image/x-icon">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <!-- Floating 3D Background Element -->
+    <div id="3d-background"></div>
+
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="nav-container">
+            <div class="logo">Abdul Hannan</div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="pitchline">
+            Your Vision, My Code <br> <span> Let's Build </span> Something Extraordinary
+        </div>
+        <div class="links">
+            <div class="linksa">
+                <div class="lnk">
+                    <a href="https://www.instagram.com/code_x_hannan/" target="_blank"> <i
+                            class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="lnk">
+                    <a href="https://www.linkedin.com/in/abdul-hannan-9801a5346/" target="_blank"> <i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <div class="lnk">
+                    <a href="https://www.youtube.com/@AbdulHannan-723" target="_blank"> <i
+                            class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="scroll-indicator">
+        <div class="mouse"></div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Hi, I'm <span class="name-gradient">Abdul Hannan</span></h1>
+                <h2 class="hero-subtitle">Web Developer & UI/UX Enthusiast</h2>
+                <p class="hero-description">Crafting immersive digital experiences with modern web technologies.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary-btn">View My Work</a>
+                    <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- 3D Avatar or Illustration -->
+                <canvas id="hero-3d-model"></canvas>
+            </div>
+        </div>
+        <section class="heros">
+            <div class="hero-contents">
+                <!-- Text Section -->
+                <div class="hero-texts">
+                    <h1> About Me</h1>
+                    <p>
+                        I’m <strong> Abdul Hanan</strong>, a passionate <strong> Web Developer </strong> who loves
+                        turning ideas into interactive and
+                        visually stunning websites. With strong skills in HTML, CSS, JavaScript, and responsive design,
+                        I build modern, user-friendly, and performance-focused websites that help businesses stand out
+                        online. <br>
+
+                        I’m constantly learning and exploring new technologies to deliver creative digital solutions. My
+                        goal is to combine clean design with powerful functionality to create websites that not only
+                        look good but also provide real value. <br>
+
+                        When I’m not coding, I enjoy exploring new tools, improving my design skills, and working on
+                        projects that challenge me to grow. <br>
+                    </p>
+                    <a href="#projects" class="btns">View My Work</a>
+                </div>
+
+                <!-- Image Section -->
+                <div class="hero-imgs">
+                    <img src="/img/profile.jpg" alt="Abdul Hanan - Web Developer">
+                </div>
+            </div>
+        </section>
+
+
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="section-header">
+            <h2 class="section-title">Skills & Experiance</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="about-content">
+            <div class="about-image">
+                <!-- Interactive 3D Profile Element -->
+                <div class="profile-3d-container">
+                    <canvas id="profile-3d"></canvas>
+                </div>
+            </div>
+            <div class="about-text">
+                <div class="skills-section">
+                    <h4>My Skills</h4>
+                    <div class="skills-grid">
+                        <div class="skill-item" data-skill="95">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML</span>
+                                <span class="skill-percent">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="80">
+                            <div class="skill-info">
+                                <span class="skill-name">CSS</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="73">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-percent">73%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 73%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="59">
+                            <div class="skill-info">
+                                <span class="skill-name">Tailwindcss</span>
+                                <span class="skill-percent">59%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 59%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="10">
+                            <div class="skill-info">
+                                <span class="skill-name">React (In learning)</span>
+                                <span class="skill-percent">10%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 10%;"></div>
+                            </div>
+                        </div>
+                        <!-- More skill items -->
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+    <div class="exp-sec-ss">
+
+        <h4 class="exp-e">Experience</h4>
+        <div class="experience-timeline">
+            <div class="timeline-item">
+                <div class="ddd">
+                    <div class="timeline-date">January - June</div>
+                    <h3>Web Developer Intern</h3>
+                </div>
+                <div class="timeline-content">
+                    <h1>Tijarah Soft</h1>
+                    <ul class="exp-txt">
+                        <li>
+                            Designed and developed a self-ordering screen interface for retail and
+                            F&B environments, optimizing the user experience for speed and ease of use.
+                        </li>
+                        <li> Built and maintained a fully functional e-commerce website,
+                            integrating secure payment gateways, responsive design, and a
+                            scalable product management system. </li>
+                        <li>Developed and integrated a custom chatbot to improve customer
+                            interaction and support, using natural language processing tools and
+                            API connections to streamline communication. </li>
+                        <li> Collaborated with UI/UX designers and backend developers to ensure
+                            seamless front-end functionality and system integration. </li>
+                        <li> Focused on performance optimization, cross-browser compatibility,
+                            and mobile responsiveness across all projects. </li>
+                        <li> Used technologies such as HTML, CSS, JavaScript and React </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="ddd">
+                    <div class="timeline-date">August - Current</div>
+                    <h3>Frontend Developer</h3>
+                </div>
+                <div class="timeline-content">
+                    <h1>Lymora Agency</h1>
+                    <ul class="exp-txt">
+                        <li>
+                            Designed and developed a modern, responsive website for Lymora, a creative agency.
+                        </li>
+                        <li> Implemented a clean UI/UX with glassmorphism and gradient effects, ensuring smooth
+                            navigation. </li>
+                        <li>
+                            Built the site with HTML, CSS, JavaScript, and optimized it for mobile devices.
+                        </li>
+                        <li> Improved site performance and SEO to increase visibility. </li>
+                        <li> Delivered a professional online presence that reflects the agency’s brand identity.</li>
+
+                    </ul>
+                </div>
+            </div>
+            <!-- More timeline items -->
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="section-header">
+            <h2 class="section-title">My Projects</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-card-inner">
+                    <div class="project-card-front">
+                        <div class="project-image">
+                            <img src="/img/food-sticker-label-vector-illustration-design_790237-1038-removebg-preview.png"
+                                alt="">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Chick'n'Chomp Fast food</h3>
+                            <p class="project-tech">html, css, JavaScript</p>
+                        </div>
+                    </div>
+                    <div class="project-card-back">
+                        <h3>fast-food </h3>
+                        <p>Chick'n'Chomp FastFood Store is a vibrant, responsive e-commerce site showcasing menu
+                            categories, appetizing product cards, easy ordering, testimonials, and clear CTAs.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://fastfoodstoree.netlify.app/" target="_blank" class="project-link">Live
+                                Demo</a>
+                            <a href="https://github.com/Hannan723/Fastfoodwebsite" target="_blank"
+                                class="project-link">View Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Project Card 2 -->
+            <div class="project-card">
+                <div class="project-card-inner">
+                    <div class="project-card-front">
+                        <div class="project-image">
+                            <img src="/img/cart-removebg-preview.png" alt="">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Inferno Market Store</h3>
+                            <p class="project-tech">html, css, JavaScript</p>
+                        </div>
+                    </div>
+                    <div class="project-card-back">
+                        <h3>Vegitable store</h3>
+                        <p>Inferno Market is a bold e-commerce website with clear branding, product categories,
+                            testimonials, and responsive design for seamless user experience.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://infernomarketstore.netlify.app/" target="_blank" class="project-link">Live
+                                Demo</a>
+                            <a href="https://github.com/Hannan723/InfernoMarketStore" target="_blank"
+                                class="project-link">View Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-card-inner">
+                    <div class="project-card-front">
+                        <div class="project-image">
+                            <img src="/img/istockphoto-1209243460-612x612-removebg-preview.png" alt="">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Coin Band | Crypto website</h3>
+                            <p class="project-tech">html, css, JavaScript</p>
+                        </div>
+                    </div>
+                    <div class="project-card-back">
+                        <h3>Crypto Website </h3>
+                        <p>Crypto Web — Insightful crypto influencer hub featuring clear navigation, highly-curated
+                            influencer lists, expert summaries, FAQ section, and user-friendly contact form
+                        </p>
+                        <div class="project-links">
+                            <a href="https://cryptowebsitee.netlify.app/" target="_blank" class="project-link">Live
+                                Demo</a>
+                            <a href="https://github.com/Hannan723/Fastfoodwebsite" target="_blank"
+                                class="project-link">View Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- More project cards -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-header">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Let's Work Together</h3>
+                <p>Have a project in mind or want to discuss potential opportunities? Feel free to reach out!</p>
+
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>hannanjehangir723@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+92 3324237828</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Nrth karachi ,Sindh ,Pakistan</span>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-codepen"></i></a>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <div class="footer-content">
+                    <div class="footer-logo">Abdul-Hannan</div>
+                    <div class="footer-links">
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                    <div class="footer-copyright">
+                        &copy; <span id="year"></span> Your Name. All rights reserved.
+                    </div>
+                </div>
+            </footer>
+
+            <script src="index.js"></script>
+</body>
+
+</html>
